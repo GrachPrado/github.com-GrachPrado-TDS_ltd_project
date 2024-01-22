@@ -24,5 +24,17 @@
     <footer data-include="partials/footer.partial.html"></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
     <script src="./js/index.js"></script>
+    <script>
+      document.getElementById('myForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        fetch('https://script.google.com/macros/s/AKfycbz8opymOR3-JqcsmpyLx0nUoXNV9pDDn-ebzFx_FoXZQQqbB9gBdwnWBexCugb7IzYbMg/exec', { 
+            method: 'POST', 
+            body: formData 
+        }).then(response => response.text())
+        .then(data => alert("Повідомлення відправлено!"))
+        .catch(error => alert("Сталася помилка: " + error));
+    });
+    </script>
   </body>
 </html>
