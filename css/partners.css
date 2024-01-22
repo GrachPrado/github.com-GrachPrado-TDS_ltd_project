@@ -1,31 +1,30 @@
 .partners {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Overpass', sans-serif;
-    font-style: normal;
-    margin-top: 150px;
-  }
-  .partners .partners__title {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-    letter-spacing: 0.2px;
-   
-  }
-  
-  .partners .partners__title h2 {
-    font-size: 48px;
-    line-height: 55px;
-    color: #252b42;
-    height: 55px;
-    margin: auto ;
-  }
+  display: flex;
+  flex-direction: column;
+  font-family: "Overpass", sans-serif;
+  font-style: normal;
+  margin-top: 150px;
+}
+.partners .partners__title {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
 
-  /*Logos*/
-  
-  .partners__logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.partners .partners__title h2 {
+  font-size: 48px;
+  line-height: 55px;
+  color: #252b42;
+  height: 55px;
+  margin: auto;
+}
+
+/*Logos*/
+
+.partners__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
