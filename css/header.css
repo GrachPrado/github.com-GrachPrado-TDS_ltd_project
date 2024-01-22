@@ -1,0 +1,287 @@
+header {
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+	background: url("../img/airCraft_PC.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 847px;
+	width: 100vw;
+	overflow: hidden;
+	font-family: 'Overpass', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.2px;
+	text-align: center;
+	color: #ffffff;
+  }
+  header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+  }
+  
+  /*Navigation section*/
+  nav {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	width: 120vw;
+	height: 100px;
+	z-index: 2;
+	background-image: linear-gradient(to right,#0F004B 60%, #0B48DA);
+	position: fixed;
+	top: 0;
+  }
+  
+  #header_logo {
+	width: 235.5px;
+	height: 50px;
+	position: absolute;
+	left: 10px;
+	top: 25%;
+  }
+  
+  .burger {
+	position: absolute;
+	left: 72.5%;
+	top: 35px;
+	color:red;
+	width: 36px;
+	height: 20px;
+  }
+  .openNav{
+	height: 20px;
+  }
+  
+  nav div#header__menu {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: rgba(0, 0, 0, 0.9);
+	transition: width 0.5s;
+	z-index: 1;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  nav div#header__menu .closebtn {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	font-size: 36px;
+	background-color: transparent;
+	border: 0px;
+	color: #ffffff;
+  }
+  
+  nav div#header__menu ul li {
+	padding: 16px 24px 24px;
+	list-style-type: none;
+	text-align: center;
+  }
+  nav div#header__menu ul li a {
+	height: 28px;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: #ffffff;
+	line-height: 28px;
+	text-decoration: none;
+	font-size: 30px;
+	transition: 0.5s;
+  }
+  
+  nav div#header__menu li::first-letter {
+	text-transform: capitalize;
+  }
+  
+  nav div#header__menu .header__menu-icons {
+	display: flex;
+	margin-top: 50px;
+  }
+  
+  nav .header__menu-social-Media {
+	display: none;
+  }
+  
+  /*Title of the Header**/  
+  header .header__title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+	bottom: 280px;
+	z-index: 1;
+  }
+  
+  .header__title > div h2 {
+	font-size: 48px;
+	line-height: 55px;
+	letter-spacing: 0.2px;
+	width: 333px;
+  }
+  
+  .header__title > div p {
+	width: 265px;
+	height: 80px;
+	font-size: 28px;
+	line-height: 40px;
+  }
+  
+  .header__title > div p span {
+	display: none;
+  }
+  
+  .header__title > div a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px 0px;
+	width: 236px;
+	height: 52px;
+	background: #0F004B;
+	font-weight: 600;
+	border-radius: 35px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #ffffff;
+  }
+  
+   .header__title > :nth-child(1) {
+	margin-bottom: 27px;
+  }
+  
+  .header__title > :nth-child(2) {
+	margin-bottom: 69px;
+  }
+  
+  @media (min-width: 768px) and (max-width: 868px) {
+	nav .header__menu-social-Media {
+	  display: none;
+	}
+  
+	nav #header_logo {
+	  position: relative;
+	  left: 50px;
+	  width: 340px;
+	  height: 68px;
+	}
+	nav div#header__menu ul li {
+		padding: 16px 12px 24px;
+	}
+  }
+  
+  @media only screen and (min-width: 768px) {
+	header {
+	  background: url("../img/airCraft_PC.jpeg") no-repeat center;
+	  background-size: cover;
+	}
+	header > nav{
+		width: 100vw;
+	}
+	header >
+	section {
+	  max-width: 100vw;
+	}
+  
+	nav {
+	  justify-content: space-around;
+	  align-items: center;
+	}
+  
+	nav div#header__menu {
+	  position: relative;
+	  display: flex;
+	  width: 500px;
+	  height: 100px;
+	  flex-direction: row;
+	  background-color: transparent;
+	  z-index: 1;
+	}
+  
+	nav div#header__menu .header__menu-links {
+	  display: flex;
+	}
+  
+	nav div#header__menu .closebtn {
+	  display: none;
+	}
+  
+	nav div#header__menu ul li a {
+	  font-size: 15px;
+	  font-weight: bold;
+	}
+  
+	nav div#header__menu .header__menu-icons {
+	  display: none;
+	}
+  
+	#header_logo {
+	  position: relative;
+	  top:0;
+	  left: 20px;
+	  width: 340px;
+	  height: 68px;
+	}
+  
+	#openNav {
+	  display: none;
+	}
+	.header__title > div h2 {
+	  font-weight: 700;
+	  font-size: 74px;
+	  line-height: 84px;
+	  width: 672px;
+	}
+  
+	.header__title > div p {
+	  width: 766px;
+	}
+  
+	.header__title > div p span {
+	  display: inline-block;
+	}
+  
+	.header__title > div button {
+	  font-size: 20px;
+	  line-height: 20px;
+	}
+  
+	.header__title > div button span {
+	  display: inline-block;
+	}
+  }
+  
+  @media (min-width: 868px) {
+	nav .header__menu-social-Media {
+	  display: block;
+	  position: absolute;
+	  right: 50px;
+	}
+  
+	nav .header__menu-social-Media ul {
+	  width: 165px;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-around;
+	}
+  }
+  
