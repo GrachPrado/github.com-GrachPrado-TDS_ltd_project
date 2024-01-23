@@ -39,12 +39,6 @@
 .contact__title p span {
   display: none;
 }
-.contact__socialMedia {
-  justify-content: center;
-  gap: 0 24px;
-  width: 220px;
-  margin: 50px auto auto;
-}
 
 /*Contact Info*/
 .contact__info {
@@ -184,12 +178,6 @@
   .contact__map iframe {
     display: none;
   }
-
-  div.contact__socialMedia {
-    grid-area: 3 / 2 / 3 / 3;
-    position: relative;
-    bottom: 480px;
-  }
   div.contact__info {
     grid-area: 2 / 2 / 3 / 2;
     margin-left: 0;
@@ -213,39 +201,6 @@
 
   .contact__title p {
     width: 532px;
-  }
-  div.contact__socialMedia {
-    margin: 0 auto 70px;
-    grid-area: 4 / 1 / 5 / 3;
-    position: relative;
-    bottom: 0;
-    justify-content: flex-start;
-    align-items: end;
-  }
-  div.contact__socialMedia img {
-    height: 41px;
-    width: 41px;
-  }
-  .contact__info {
-    grid-area: 2 / 2 / 3 / 3;
-    width: 725px;
-    flex-direction: row;
-  }
-  .contact__info > div {
-    height: 108px;
-    width: 313px;
-    justify-content: center;
-  }
-  .contact__info > div:nth-child(1) {
-    margin-left: 50px;
-    margin-right: 10px;
-  }
-  .contact__info > div:nth-child(2) {
-    width: 137px;
-    margin-right: 10px;
-  }
-  .contact__info > div:nth-child(3) {
-    width: 245px;
   }
   .contact__map iframe {
     display: inline-block;
