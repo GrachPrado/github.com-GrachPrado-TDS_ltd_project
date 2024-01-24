@@ -46,22 +46,22 @@
   }
   
   .experience__cards > div {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	margin: 10px 20px;
-	border: 1px solid rgba(102, 115, 141, 0.3);
-	border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 20px;
+    border: 1px solid rgba(102, 115, 141, 0.3);
+    border-radius: 40px;
 
-	background-image: url('../img/mi_8.png');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-  }
-  .shadow{
+    background-image: url('../img/mi_8.png');
+    background-position: center 0; /* начальное положение фона */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.shadow {
     background-color: rgb(0, 0, 0);
     position: absolute;
     top: 0;
@@ -71,6 +71,7 @@
     opacity: 0.4;
     border-radius: 40px;
 }
+
   .experience__cards > div i {
 	font-size: 32px;
 	margin: 20px 0;
