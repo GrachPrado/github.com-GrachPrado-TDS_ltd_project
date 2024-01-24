@@ -61,6 +61,13 @@
 	background-size: cover;
 	position: relative;
   }
+  @media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        .experience__cards > div {
+            background-attachment: scroll; /* Fallback for Safari */
+        }
+    }
+}
   .shadow{
     background-color: rgb(0, 0, 0);
     position: absolute;
