@@ -130,8 +130,7 @@
 
 @media screen and (max-width: 767px) {
 .experience__cards > div {
-	background-image: none;
-	
+	background-attachment: scroll;
   }
 
   }
