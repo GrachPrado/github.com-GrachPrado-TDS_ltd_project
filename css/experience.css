@@ -127,4 +127,28 @@
 	  padding: 0;
 	}
   }
+
+@media screen and (max-width: 768px) {
+.experience__cards > div {
+	background-image: none;
+  }
+  .shadow{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    border-radius: 40px;
+}
+.experience__cards {
+	background-image: url('../img/mi_8.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+  }
+  }
   
