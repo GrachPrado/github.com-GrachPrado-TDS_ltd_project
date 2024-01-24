@@ -127,3 +127,11 @@
 	  padding: 0;
 	}
   }
+
+@media screen and (max-width: 768px) {
+.experience__cards > div {
+	background-image: none;
+  }
+
+  }
+  
